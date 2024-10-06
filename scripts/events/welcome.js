@@ -1,7 +1,7 @@
 const { getTime, drive } = global.utils;
 if (!global.temp.welcomeEvent)
 	global.temp.welcomeEvent = {};
-
+ 
 module.exports = {
 	config: {
 		name: "welcome",
@@ -9,7 +9,7 @@ module.exports = {
 		author: "NTKhang",
 		category: "events"
 	},
-
+ 
 	langs: {
 		vi: {
 			session1: "sáng",
@@ -26,13 +26,13 @@ module.exports = {
 			session2: "𝙽𝙾𝙾𝙽",
 			session3: "𝙰𝙵𝚃𝙴𝚁𝙽𝙾𝙾𝙽",
 			session4: "𝙴𝚅𝙴𝙽𝙸𝙽𝙶",
-			welcomeMessage: "𝙷𝙴𝚈 𝙶𝚄𝚈 𝙱𝙾𝚃 𝙲𝙾𝙽𝙽𝙴𝙲𝚃 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿\n𝙱𝙾𝚃 𝙿𝚁𝙴𝙵𝙸𝚇: %1\n 𝙰𝙽𝙳 𝚃𝙽𝚇 𝙵𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝙽𝙸𝚂𝙰𝙽 𝚃𝚈𝙿𝙴☞︎︎︎%1𝙷𝙴𝙻𝙿☞︎︎\n𝙱𝙾𝚃 𝙲𝚁𝙴𝙳𝙸𝚃 𝙱𝚈 𝙽𝙸𝚂𝙰𝙽 𖤍🂱",
+			welcomeMessage: "𝙷𝙴𝚈 𝙶𝚄𝚈𝚂 𝚂𝙺 𝚂𝙸𝙳𝙳𝙸𝙺 𝙲𝙾𝙽𝙽𝙴𝙲𝚃 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿\n𝚂𝙺 𝚂𝙸𝙳𝙳𝙸𝙺 𝙿𝚁𝙴𝙵𝙸𝚇: %1\n 𝙰𝙽𝙳 𝚃𝙽𝚇 𝙵𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝚂𝙺 𝚂𝙸𝙳𝙳𝙸𝙺 𝚃𝚈𝙿𝙴☞︎︎︎%1𝙷𝙴𝙻𝙿☞︎︎\n𝙱𝙾𝚃 𝙲𝚁𝙴𝙳𝙸𝚃 𝙱𝚈 𝚂𝙺 𝚂𝙸𝙳𝙳𝙸𝙺 𖤍🂱",
 			multiple1: "𝚈𝙾𝚄",
 			multiple2: "𝚈𝙾𝚄 𝙶𝚄𝚈𝚂",
-			defaultWelcomeMessage: `𝙰𝚂𝚂𝙰𝙻𝙰𝙼𝚄𝚆𝙰𝙻𝙰𝙸𝙺𝚄𝙼 {userName} 𝙱𝚁𝙾𝚃𝙷𝙴𝚁  𝚆𝙴𝙻𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝙽𝙸𝚂𝙰𝙽 \n𝚆𝙴𝙻𝙻𝙲𝙾𝙼𝙴  {multiple} 𝚃𝙾 𝚃𝙷𝙴 𝙲𝙷𝙰𝚃 𝙱𝙾𝚇: {boxName}\n𝙷𝙰𝚅𝙴 𝙰 𝙽𝙸𝙲𝙴  {session}🐼♲︎︎︎`
+			defaultWelcomeMessage: `𝙰𝚂𝚂𝙰𝙻𝙰𝙼𝚄𝚆𝙰𝙻𝙰𝙸𝙺𝚄𝙼 {userName} 𝙱𝚁𝙾𝚃𝙷𝙴𝚁  𝚆𝙴𝙻𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙺 𝚂𝙸𝙳𝙳𝙸𝙺 \n𝚆𝙴𝙻𝙻𝙲𝙾𝙼𝙴  {multiple} 𝚃𝙾 𝚃𝙷𝙴 𝙲𝙷𝙰𝚃 𝙱𝙾𝚇: {boxName}\n𝙷𝙰𝚅𝙴 𝙰 𝙽𝙸𝙲𝙴  {session}🐼♲︎︎︎`
 		}
 	},
-
+ 
 	onStart: async ({ threadsData, message, event, api, getLang }) => {
 		if (event.logMessageType == "log:subscribe")
 			return async function () {
@@ -53,12 +53,12 @@ module.exports = {
 						joinTimeout: null,
 						dataAddedParticipants: []
 					};
-
+ 
 				// push new member to array
 				global.temp.welcomeEvent[threadID].dataAddedParticipants.push(...dataAddedParticipants);
 				// if timeout is set, clear it
 				clearTimeout(global.temp.welcomeEvent[threadID].joinTimeout);
-
+ 
 				// set new timeout
 				global.temp.welcomeEvent[threadID].joinTimeout = setTimeout(async function () {
 					const threadData = await threadsData.get(threadID);
@@ -70,10 +70,10 @@ module.exports = {
 					const userName = [],
 						mentions = [];
 					let multiple = false;
-
+ 
 					if (dataAddedParticipants.length > 1)
 						multiple = true;
-
+ 
 					for (const user of dataAddedParticipants) {
 						if (dataBanned.some((item) => item.id == user.userFbId))
 							continue;
@@ -111,9 +111,9 @@ module.exports = {
 										? getLang("session3")
 										: getLang("session4")
 						);
-
+ 
 					form.body = welcomeMessage;
-
+ 
 					if (threadData.data.welcomeAttachment) {
 						const files = threadData.data.welcomeAttachment;
 						const attachments = files.reduce((acc, file) => {
@@ -130,3 +130,4 @@ module.exports = {
 			};
 	}
 };
+ 
