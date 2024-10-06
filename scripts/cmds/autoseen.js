@@ -33,10 +33,10 @@ if (!fs.existsSync(pathFile))
   try {
     if (args[0] == 'on') {
      fs.writeFileSync(pathFile, 'true');
-     api.sendMessage('Sk Siddik boss autoseen on successful😘', event.threadID, event.messageID);
+     api.sendMessage('autoseen on successful😘', event.threadID, event.messageID);
     } else if (args[0] == 'off') {
      fs.writeFileSync(pathFile, 'false');
-     api.sendMessage('Sk Siddik boss autoseen off successful😘', event.threadID, event.messageID);
+     api.sendMessage('autoseen off successful😘', event.threadID, event.messageID);
     } else {
      api.sendMessage('Incorrect syntax', event.threadID, event.messageID);
     }
