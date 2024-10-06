@@ -26,7 +26,7 @@ module.exports = {
 			session2: "𝙽𝙾𝙾𝙽",
 			session3: "𝙰𝙵𝚃𝙴𝚁𝙽𝙾𝙾𝙽",
 			session4: "𝙴𝚅𝙴𝙽𝙸𝙽𝙶",
-			welcomeMessage: "🔰𝙰𝚂𝚂𝙰𝙻𝙰𝙼𝚄 𝚆𝙰𝙻𝙰𝙸𝙺𝚄𝙼🔰\n\n╰➤ 𝙱𝙾𝚃 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝙵𝚄𝙻 \n\n╰➤ 𝙰𝙽𝙳 𝙵𝙾𝚁 𝙰𝙽𝚢 𝙲𝙾𝙼𝙿𝙻𝙰𝙸𝙽𝚃𝚂 𝙾𝚁 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙱𝙾𝚃 𝙾𝙿𝙴𝚁𝙰𝚃𝙾𝚁\n\n╰➤ 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁 : 𝚂𝙺 𝚂𝙸𝙳𝙳𝙸𝙺\n\n╰➤ 𝙵𝚋 𝙽𝚊𝚖𝚎𝚜 : 𝚂𝙺 𝚂𝙸𝙳𝙳𝙸𝙺 𝙺𝙷𝙰𝙽\n\n╰➤ 𝙵𝚋 𝙻𝚒𝚗𝚔: m.me/rxsiddik1\n\n╰➤ 𝙵𝚋 𝙻𝚒𝚗𝚔: m.me/TERA.PAPPA.IS.BUSY\n\n╰➤ 𝚃𝙷𝙰𝙽𝙺𝚂 𝙵𝙾𝚁 𝚄𝚂𝙸𝙽𝙶",
+			welcomeMessage: "🔰𝙰𝚂𝚂𝙰𝙻𝙰𝙼𝚄 𝚆𝙰𝙻𝙰𝙸𝙺𝚄𝙼🔰\n\n𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝙵𝚄𝙻    \n\n╰➤ 𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁 : 𝚂𝙺 𝚂𝙸𝙳𝙳𝙸𝙺\n\n╰➤ 𝙵𝚋 𝙻𝚒𝚗𝚔: m.me/rxsiddik1\n\n╰➤ 𝙵𝚋 𝙻𝚒𝚗𝚔: m.me/TERA.PAPPA.IS.BUSY\n\n╰➤ 𝚃𝙷𝙰𝙽𝙺𝚂 𝙵𝙾𝚁 𝚄𝚂𝙸𝙽𝙶",
 			multiple1: "𝚈𝙾𝚄",
 			multiple2: "𝚈𝙾𝚄 𝙶𝚄𝚈𝚂",
 			defaultWelcomeMessage: `𝙰𝚂𝚂𝙰𝙻𝙰𝙼𝚄𝚆𝙰𝙻𝙰𝙸𝙺𝚄𝙼 {userName} 𝙱𝚁𝙾𝚃𝙷𝙴𝚁  𝚆𝙴𝙻𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙺 𝚂𝙸𝙳𝙳𝙸𝙺 \n𝚆𝙴𝙻𝙻𝙲𝙾𝙼𝙴  {multiple} 𝚃𝙾 𝚃𝙷𝙴 𝙲𝙷𝙰𝚃 𝙱𝙾𝚇: {boxName}\n𝙷𝙰𝚅𝙴 𝙰 𝙽𝙸𝙲𝙴  {session}🐼♲︎︎︎`
