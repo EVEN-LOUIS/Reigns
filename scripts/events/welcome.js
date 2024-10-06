@@ -30,7 +30,6 @@ module.exports = {
 			multiple1: "𝚈𝙾𝚄",
 			multiple2: "𝚈𝙾𝚄 𝙶𝚄𝚈𝚂",
 			defaultWelcomeMessage: `𝙰𝚂𝚂𝙰𝙻𝙰𝙼𝚄𝚆𝙰𝙻𝙰𝙸𝙺𝚄𝙼 {userName} 𝙱𝚁𝙾𝚃𝙷𝙴𝚁  𝚆𝙴𝙻𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙺 𝚂𝙸𝙳𝙳𝙸𝙺 \n𝚆𝙴𝙻𝙻𝙲𝙾𝙼𝙴  {multiple} 𝚃𝙾 𝚃𝙷𝙴 𝙲𝙷𝙰𝚃 𝙱𝙾𝚇: {boxName}\n𝙷𝙰𝚅𝙴 𝙰 𝙽𝙸𝙲𝙴  {session}🐼♲︎︎︎`
-			attachment: welcomeMessage global.utils.getStreamFromURL("https://i.imgur.com/jh4xtD2.jpeg")
 		}
 	},
  
